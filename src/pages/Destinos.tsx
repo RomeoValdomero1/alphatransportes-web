@@ -13,7 +13,7 @@ const Destinos = () => {
     {
       name: "Santa Fe",
       cities: [
-        "Santa Fe", "Rafaela", "Tostado", "Ceres", "Santo Tome", "San Justo",
+        "Santa Fe", "Rafaela", "Esperanza", "Sauce Viejo", "Santo Tome", "Malabrigo", "Florencia", 
         "Vera", "Reconquista", "Avellaneda", "Villa Ocampo", "Las Toscas", "Intermedias de Ruta 11"
       ],
       specialty: ""
