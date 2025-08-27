@@ -15,9 +15,6 @@ const Servicios = () => {
   const handleHablarEspecialista = () => {
     navigate('/contacto');
   };
-
-
-const Servicios = () => {
   const servicios = [{
     title: "Cargas Generales",
     description: "Transporte seguro y confiable para todo tipo de mercaderías. Cobertura completa en Centro y NEA.",
@@ -129,7 +126,10 @@ const Servicios = () => {
                       </div>
                     </div>
                     
-                    <Button className={`w-full bg-gradient-to-r ${servicio.color} hover:shadow-lg transition-all duration-300 text-white font-semibold py-3 group`}>
+                    <Button 
+                      onClick={handleSolicitarCotizacion}
+                      className={`w-full bg-gradient-to-r ${servicio.color} hover:shadow-lg transition-all duration-300 text-white font-semibold py-3 group`}
+                    >
                       <Zap className="w-4 h-4 mr-2 group-hover:animate-pulse" />
                       Solicitar cotización
                     </Button>
@@ -153,7 +153,11 @@ const Servicios = () => {
                   Nuestro equipo de especialistas desarrollará una solución logística específica para tu empresa
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-8 py-4 rounded-xl hover:scale-105 transition-all duration-300">
+                  <Button 
+                    onClick={handleHablarEspecialista}
+                    size="lg" 
+                    className="bg-white text-blue-600 hover:bg-gray-100 font-semibold px-8 py-4 rounded-xl hover:scale-105 transition-all duration-300"
+                  >
                     <Users className="w-5 h-5 mr-2" />
                     Hablar con un Especialista
                   </Button>
