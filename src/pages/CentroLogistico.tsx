@@ -24,23 +24,26 @@ const CentroLogistico = () => {
     },
     {
       nombre: "Alfa (Expreso)",
+      casaCentral: "Av. Alem 2374 - Venado Tuerto, Santa Fe",
       destino: "Córdoba con Venado Tuerto, CABA, Rufino, San Gregorio, Canals, La Carlota y todo el sur de la Provincia de Santa Fe",
       contacto: "+54 9 3462 650 679 / +54 3462 400 789"
     },
     {
       nombre: "Andrea (Fletes)",
-      destino: "Córdoba con Villa del Rosario, Luque y Las Varillas",
-      contacto: "(0351) (15) 551 2024 – Jorge Cocconi / (0351) (15) 634 0371 – Marcelo Cocconi"
+      destino: "Córdoba con Villa del Rosario, Luque, Las Varillas y Sacanta",
+      contacto: "(0351) (15) 634 0371 – Marcelo Cocconi"
     },
     {
       nombre: "Astutti (Expreso)",
-      destino: "Córdoba con Cañada de Gómez, Rosario y Las Rosas",
-      contacto: "(03471) 42 2875"
+      casaCentral: "Necochea 1150 - Cañada De Gómez, Santa Fe",
+      destino: "Córdoba con Cañada de Gómez, Rosario, Las Rosas y Buenos Aires - CABA",
+      contacto: "(03471) 42 2875 / +54 9 3471 62 2465"
     },
     {
       nombre: "Belgrano (Transporte)",
+      casaCentral: "Dr Pitt Funes esq. Int Zampol - Brinkmann, Córdoba",
       destino: "Córdoba con Brinkmann, Morteros, Suardi, Porteña e intermedias",
-      contacto: "(03562) 40 1860/1"
+      contacto: "(03562) 40 1860/1 / +54 9 3562 40 7127"
     },
     {
       nombre: "Borgogno (Transporte)",
@@ -49,12 +52,14 @@ const CentroLogistico = () => {
     },
     {
       nombre: "Brinatti (Transportes)",
-      destino: "Córdoba con General Pico, Santa Rosa y localidades del norte de La Pampa",
-      contacto: "(02302) 421 6471"
+      casaCentral: "Calle 1 n° 1168 - General Pico, La Pampa",
+      destino: "Córdoba con General Pico, Santa Rosa, localidades del norte de La Pampa, Buenos Aires y Rosario",
+      contacto: "(02302) 421 6471 / +54 9 2302 47 0490"
     },
     {
       nombre: "Calcabrini (Expreso)",
-      destino: "Córdoba con General Deheza, General Cabrera y Buenos Aires",
+      casaCentral: "Parque Industrial General Deheza, Córdoba",
+      destino: "Córdoba con General Deheza, General Cabrera, Buenos Aires, Carnerillo y Hernando",
       contacto: "(0358) 405 3678"
     },
     {
@@ -66,6 +71,12 @@ const CentroLogistico = () => {
       nombre: "Capello (Transporte)",
       destino: "Córdoba con San Francisco e intermedias",
       contacto: "(03564) 47 3824"
+    },
+    {
+      nombre: "Commission Agent",
+      casaCentral: "Félix Frías 924 - Córdoba, Córdoba",
+      destino: "Río Segundo, Pilar, Oncativo, Oliva, James Craik, Tio Pujio, Villa Nueva, Villa María",
+      contacto: "+54 9 351 302 7844"
     },
     {
       nombre: "Cravero (Comisiones)",
@@ -88,19 +99,26 @@ const CentroLogistico = () => {
       contacto: "(03544) (15) 46 5110"
     },
     {
+      nombre: "El Quebrachito (Transporte)",
+      casaCentral: "Sarmiento 1502 - Río Cuarto, Córdoba",
+      destino: "Río Cuarto, San Luis, Villa Mercedes, Sampacho, Rosario, Buenos Aires",
+      contacto: "+54 9 358 417 9865"
+    },
+    {
       nombre: "El Turco (Transporte)",
-      destino: "Servicios de transporte",
+      destino: "Servicios de transporte, Aimogasta, La Rioja",
       contacto: "+54 9 382-7453-666 / 382-2743-720"
     },
     {
-      nombre: "Giordano (Transporte)",
-      destino: "Córdoba con San Jorge, El Trébol y Rosario",
-      contacto: "54 3406 403 146"
+      nombre: "Giordano (Comisiones)",
+      destino: "Córdoba con San Jorge, El Trébol y Carlos Pellegrini",
+      contacto: "+54 9 3406 40-3146"
     },
     {
       nombre: "Gómez (Transporte)",
+      casaCentral: "Av. Pedro Miguel Aráoz 315 - San Miguel, Tucumán",
       destino: "Línea CABA, Rosario, Córdoba, Tucumán",
-      contacto: "(0381) 420 1770"
+      contacto: "(0381) 420 1770 / +54 9 3814 12-2426"
     },
     {
       nombre: "GU-SE (Transporte)",
@@ -239,6 +257,11 @@ const CentroLogistico = () => {
                 <Card key={index} className="hover:shadow-elegant transition-all duration-300">
                   <CardContent className="p-6">
                     <h3 className="font-bold text-lg text-primary mb-2">{transporte.nombre}</h3>
+                    {transporte.casaCentral && (
+                      <p className="text-sm text-muted-foreground mb-2">
+                        <strong>Casa Central:</strong> {transporte.casaCentral}
+                      </p>
+                    )}
                     <p className="text-muted-foreground mb-3">{transporte.destino}</p>
                     <div className="flex items-center gap-2 text-sm text-accent">
                       <Phone className="w-4 h-4" />
