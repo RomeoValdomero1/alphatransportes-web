@@ -4,6 +4,19 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Truck, Package, Home, Shield, Clock, MapPin, Warehouse, BarChart3, Settings, Star, Zap, CheckCircle, TrendingUp, Award, Users } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+const Servicios = () => {
+  const navigate = useNavigate();
+  
+  const handleSolicitarCotizacion = () => {
+    navigate('/contacto');
+  };
+
+  const handleHablarEspecialista = () => {
+    navigate('/contacto');
+  };
+
+
 const Servicios = () => {
   const servicios = [{
     title: "Cargas Generales",
