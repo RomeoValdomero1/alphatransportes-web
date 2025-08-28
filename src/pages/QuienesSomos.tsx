@@ -33,7 +33,7 @@ const QuienesSomos = () => {
       color: "bg-success"
     },
     {
-      año: "1995",
+      año: "1960-1969",
       titulo: "Túnel Subfluvial Hernandarias",
       descripcion: "Participación en el transporte de materiales para la construcción del túnel subfluvial.",
       color: "bg-info"
@@ -64,7 +64,7 @@ const QuienesSomos = () => {
     },
     {
       año: "2020-2024",
-      titulo: "Líder en Logística Digital",
+      titulo: "Líder en Logística Digital - En Proceso",
       descripcion: "Implementación de sistemas de rastreo en tiempo real y plataformas digitales avanzadas.",
       color: "bg-gradient-hero"
     }
