@@ -11,7 +11,7 @@ const Sucursales = () => {
       phone: "(0351) 573-8046 - (0351) 573 8047 - (351) 3147 077",
       email: "cordoba@alphatransportes.com.ar",
       description: "Casa matriz y centro de operaciones principal",
-      horarios: "Lunes a Viernes: 7:00 - 19:00hs | Sábados: 8:00 - 12:00hs",
+      horarios: "Lunes a Viernes: 7:00 - 19:00hs ",
       servicios: ["Centro Logístico", "Oficinas Administrativas", "Depósito Principal"]
     },
     {
